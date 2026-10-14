@@ -51,8 +51,8 @@ void ByterConverter::decChanged(const QString& newValue)
         hexEdit->setText(QString::number(num,16));
         binEdit->setText(QString::number(num,2));
     }else{
-        hexEdit->setText("");
-        binEdit->setText("");
+        hexEdit->setText("???");
+        binEdit->setText("???");
     }
 }
 void ByterConverter::hexChanged(const QString& newValue){
@@ -63,8 +63,8 @@ void ByterConverter::hexChanged(const QString& newValue){
         decEdit->setText(QString::number(num,10));
         binEdit->setText(QString::number(num,2));
     }else{
-        decEdit->setText("");
-        binEdit->setText("");
+        decEdit->setText("???");
+        binEdit->setText("???");
     }
 }
 void ByterConverter::binChanged(const QString& newValue){
@@ -75,8 +75,8 @@ void ByterConverter::binChanged(const QString& newValue){
         hexEdit->setText(QString::number(num,16));
         decEdit->setText(QString::number(num,10));
     }else{
-        hexEdit->setText("");
-        decEdit->setText("");
+        hexEdit->setText("???");
+        decEdit->setText("???");
     }
 }
 
